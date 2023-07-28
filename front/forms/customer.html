@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Customer Registration Form</title>
+        <link rel="stylesheet" href="/front/forms/css/form.css" />
+    </head>
+
+    <body>
+        <h1>Change of Address and Phone Number</h1>
+        <form>
+            <label class="label-form" for="cust_id">User ID:</label>
+            <input
+                type="text"
+                id="cust_id"
+                name="cust_id"
+                placeholder="123"
+                required
+            />
+
+            <label class="label-form" for="address">Address:</label>
+            <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="50"
+                placeholder="district,state"
+                required
+            ></textarea>
+
+            <label class="label-form" for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91xxxxxxxx"
+                required
+            />
+
+            <button type="button" class="btn solid" onclick="cust()">
+                Change Details
+            </button>
+        </form>
+		<script src="/front/login/js/app.js"></script>
+    </body>
+</html>

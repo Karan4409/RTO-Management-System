@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Add vehicle Form</title>
+
+        <link rel="stylesheet" href="/front/forms/css/form.css" />
+    </head>
+    <body>
+        <h1>Register Your Vehicle</h1>
+        <form>
+            <label class="label-form" for="cust_id">User ID:</label>
+            <input
+                type="text"
+                id="cust_id"
+                name="cust_id"
+                placeholder="123"
+                required
+            />
+
+            <label class="label-form" for="vehicle_number"
+                >Vehicle Number:</label
+            >
+            <input
+                type="text"
+                id="vehicle_number"
+                name="vehicle_number"
+                placeholder="XY01AB8456"
+                required
+            />
+
+            <label class="label-form" for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Karan"
+                required
+            />
+
+            <label class="label-form" for="color">Color:</label>
+            <input
+                type="text"
+                id="color"
+                name="color"
+                placeholder="Color"
+                required
+            />
+
+            <label class="label-form" for="class">Class:</label>
+            <select id="class1" name="class" required>
+                <option value="" selected disabled>Select a Class</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Convertible">Convertible</option>
+            </select>
+
+            <label class="label-form" for="fuel_type">Fuel Type:</label>
+            <select id="fuel_type" name="fuel_type" required>
+                <option value="" selected disabled>Select a Fuel Type</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Electric</option>
+            </select>
+            <button type="button" class="btn solid" onclick="vehicle()">
+                register
+            </button>
+        </form>
+        <script src="/front/login/js/app.js"></script>
+    </body>
+</html>

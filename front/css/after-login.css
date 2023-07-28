@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/images/background.svg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . .";
+    backdrop-filter: blur(8px);
+}
+
+.card-layout {
+    border: 1px solid #333;
+    margin: 150px 30px 20px 20px;
+    border-radius: 35px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    height: 500px;
+}
+
+.card-layout-2 {
+    border: 1px solid #333;
+    margin: 30px;
+    border-radius: 35px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    height: 500px;
+}
+
+.heading-card {
+    text-align: center;
+}
+
+.card-paragraph {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.after-login-footer {
+    height: 50vh;
+}
+
+.after-login-button:hover, .after-login-button:visited, .after-login-button:link, .after-login-button:active {
+    color: #fff !important;
+    text-decoration: none;
+}

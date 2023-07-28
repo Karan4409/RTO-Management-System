@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Driving License Form</title>
+
+        <link rel="stylesheet" href="/front/forms/css/form.css" />
+    </head>
+    <body>
+        <h1>Register your Driving License</h1>
+        <form>
+            <label class="label-form" for="cust_id">User ID:</label>
+            <input
+                type="text"
+                id="cust_id"
+                name="cust_id"
+                placeholder="123"
+                required
+            />
+
+			<label class="label-form" for="dl_no">DL No.</label>
+            <input
+                type="text"
+                id="dl_no"
+                name="dl_no"
+                placeholder="XY01AB8456"
+                required
+            />
+
+            <label class="label-form" for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Krishiv Pandita"
+                required
+            />
+
+            <label class="label-form" for="address">Address:</label>
+            <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="50"
+                placeholder="district,state"
+                required
+            ></textarea>
+
+            <label class="label-form" for="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+                placeholder="dd-mm-yy"
+                required
+            />
+
+            <label class="label-form" for="validity">Validity:</label>
+            <input
+                type="date"
+                id="validity"
+                name="validity"
+                placeholder="dd-mm-yy"
+                required
+            />
+
+            <label class="label-form" for="blood_group">Blood Group:</label>
+            <input
+                type="text"
+                id="blood_group"
+                name="blood_group"
+                placeholder="X+"
+                required
+            />
+
+            <button type="button" class="btn solid" onclick="dl()">
+                register
+            </button>
+        </form>
+        <script src="/front/login/js/app.js"></script>
+    </body>
+</html>

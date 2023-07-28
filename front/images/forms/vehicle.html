@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add vehicle Form</title>
+	<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+	<form>
+		<label class="label-form" for="user_id">User ID:</label>
+		<input type="text" id="user_id" name="user_id" placeholder="123" required>
+
+		<label class="label-form" for="vehicle_number">Vehicle Number:</label>
+		<input type="text" id="vehicle_number" name="vehicle_number" placeholder="XY01AB8456" required>
+
+		<label class="label-form" for="name">Name:</label>
+		<input type="text" id="name" name="name"placeholder="Name" required>
+
+		<label class="label-form" for="color">Color:</label>
+		<input type="text" id="color" name="color"placeholder="LMV" required>
+
+		<label class="label-form" for="class">Class:</label>
+		<select id="class" name="class" required>
+			<option value="" selected disabled>Select a Class</option>
+			<option value="Hatchback">Hatchback</option>
+			<option value="Sedan">Sedan</option>
+			<option value="SUV">SUV</option>
+			<option value="Convertible">Convertible</option>
+		</select>
+
+		<label class="label-form" for="fuel_type">Fuel Type:</label>
+		<select id="fuel_type" name="fuel_type" required>
+			<option value="" selected disabled>Select a Fuel Type</option>
+			<option value="Petrol">Petrol</option>
+			<option value="Diesel">Diesel</option>
+			<option value="Electric">Electric</option>
+		</select>
+
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>

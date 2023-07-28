@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Violations Form</title>
+
+        <link rel="stylesheet" href="/front/forms/css/form.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <h1>Get Violation <Details></Details></h1>
+        <form>
+            <label class="label-form" for="cust_id">User ID:</label>
+            <input
+                type="number"
+                id="cust_id"
+                name="cust_id"
+                placeholder="123"
+                required
+            />
+
+            <label class="label-form" for="sdate">Start Date: </label>
+            <input
+                type="text"
+                id="sdate"
+                name="sdate"
+                placeholder="YYYY-MM-DD"
+                required
+            />
+
+            <label class="label-form" for="sdate">End Date: </label>
+            <input
+                type="text"
+                id="edate"
+                name="edate"
+                placeholder="YYYY-MM-DD"
+                required
+            />
+
+            <button type="button" class="btn solid" onclick="violate()">
+                Show
+            </button>
+
+            
+        </div>
+        <script src="/front/login/js/app.js"></script>
+    </form>
+    <div id="violation-fetch">
+    </body>
+</html>

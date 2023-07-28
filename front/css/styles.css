@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,*::after,*::before{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    padding: 25px 35px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.nav-link{
+    opacity: 0.75;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 75%;
+  }
+
+.navbar-ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+
+}
+li a{
+    margin-left: 40px;
+}
+
+.navbar a{
+    color: #000;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.navbar-container{
+    padding: 40px 115px !important;
+}
+
+.dropdown-list{
+    margin: 2.5px 6px;
+    padding: 10px;
+    overflow: hidden;
+    font-size: 0.90rem;
+}
+
+
+.hero-banner{
+    width: 100vw;
+    height: 100vh;
+    background: url(/front/images/background.svg)
+}
+
+.hero-heading{
+    margin: 45px auto;
+    height: 20vh;
+    width: 50vw;
+}
+
+/* Features */
+.features-section{
+    margin: 30px 15px -40px 15px !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.featurette-section{
+    margin-top: -50px;
+    padding: 50px !important;
+}
+
+.featurette-divider_line{
+    margin: 70px 0 !important;
+}
+
+/* FAQs */
+.faq-heading{
+    margin: 50px 0px;
+}
+
+/* footer */
+
+
+.main-footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #181823;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+  background-color: #181823;
+  border-top: 1px solid #ECF9FF;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 0px !important;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: #6EB981;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.sociallogos{
+  padding:20px 0;
+}
+
+.sociallogos .logobox a{
+  padding:0 10px;
+  text-decoration:none;
+  color:#ffffff;
+  font-size:22px;
+}
+
+.com ul li{
+  padding:5px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.footer-list-items{
+    margin-left: -40px !important;
+}
+
+.quick-list-items{
+    margin-left: -70px;
+}
+
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .info{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos{
+    padding:20px 0;
+  }
+  .com{
+    padding:20px 0;
+  } 
+
+}
+
+.logo{
+  width: 8vw;
+  height: 15vh;
+}
+
+.footer-logo{
+  background: #fff;
+  width: 11vw;
+  border-radius: 25px;
+}
+
+.footer-text{
+  color: #fff;
+}
+
+.brand-logo{
+  color: #fff;
+  width: 50px;
+}
